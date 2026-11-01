@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=BrisaDock
+GenericName=Dock estilo macOS
+Comment=Lanzador y barra de tareas estilo macOS con soporte X11 y KWin Wayland
+Exec=brisadock
+TryExec=brisadock
+Icon=org.brisadock.BrisaDock
+Terminal=false
+Categories=Utility;DesktopSettings;Qt;
+Keywords=dock;macos;panel;launcher;taskbar;finder;stacks;
+StartupNotify=false
+Actions=Keyboard;
+
+[Desktop Action Keyboard]
+Name=Navegar por el Dock con teclado
+Exec=brisadock --keyboard

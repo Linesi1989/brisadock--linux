@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.brisadock.BrisaDock</id>
+  <name>BrisaDock</name>
+  <summary>Dock estilo macOS para Linux (X11 y KWin Wayland)</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="org.brisadock">
+    <name>Leonardo — BrisaDock Project</name>
+  </developer>
+  <description>
+    <p>
+      BrisaDock es un lanzador y barra de tareas independiente para escritorios Linux
+      con estética de cristal (Glassmorphism) y paridad funcional con el Dock de macOS.
+    </p>
+    <ul>
+      <li>Superficie translúcida con desenfoque nativo KWin, modo claro/oscuro y redimensionado desde el separador (16–72 px).</li>
+      <li>Carpetas y Pilas (Stacks) desplegables en Abanico (Fan), Rejilla (Grid) y Lista, con apertura automática al arrastrar archivos (Spring-loading).</li>
+      <li>Efectos de minimización por escala y lámina (Genie / Sheet), vistas previas en vivo y ocultación de aplicaciones.</li>
+      <li>Integración nativa con X11 (EWMH/XComposite) y sesiones Wayland mediante puente D-Bus con KWin.</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">org.brisadock.BrisaDock.desktop</launchable>
+  <provides>
+    <binary>brisadock</binary>
+  </provides>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.37.0" date="2026-11-01">
+      <description>
+        <p>Paridad completa macOS Dock y Windows 0.37, soporte híbrido X11 + KWin Wayland, pilas de aplicaciones y papelera interactiva.</p>
+      </description>
+    </release>
+  </releases>
+</component>

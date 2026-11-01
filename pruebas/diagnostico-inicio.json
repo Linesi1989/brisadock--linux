@@ -1,0 +1,8 @@
+{
+  "phase": "idle",
+  "backend": "X11Backend",
+  "trash_count": 2,
+  "startup_seconds": 0.656,
+  "thread_stopped": true,
+  "result": "PASS"
+}

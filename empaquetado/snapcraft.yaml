@@ -1,0 +1,29 @@
+name: brisadock
+base: core22
+version: '0.37.0'
+summary: Dock estilo macOS para escritorios Linux (X11 y KWin Wayland)
+description: |
+  Lanzador y barra de tareas independiente con estética de cristal (Glassmorphism),
+  carpetas en Abanico/Rejilla/Lista, pilas (Stacks), efecto lámina (Genie/Sheet),
+  vistas previas en vivo y soporte híbrido para X11 y KDE Wayland.
+
+grade: stable
+confinement: classic
+
+apps:
+  brisadock:
+    command: usr/bin/brisadock
+    desktop: usr/share/applications/org.brisadock.BrisaDock.desktop
+
+parts:
+  brisadock:
+    plugin: dump
+    source: ..
+    organize:
+      src: usr/lib/brisadock/src
+      empaquetado/org.brisadock.BrisaDock.desktop: usr/share/applications/org.brisadock.BrisaDock.desktop
+      empaquetado/org.brisadock.BrisaDock.svg: usr/share/icons/hicolor/scalable/apps/org.brisadock.BrisaDock.svg
+      empaquetado/org.brisadock.BrisaDock.metainfo.xml: usr/share/metainfo/org.brisadock.BrisaDock.metainfo.xml
+    stage:
+      - usr/lib/brisadock/src/*.py
+      - usr/share/**

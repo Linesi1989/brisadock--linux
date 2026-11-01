@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "entries": 160,
+  "first_extractions": 160,
+  "restart_extractions": 0,
+  "restart_disk_hits": 160,
+  "changed_resource_extractions": 1,
+  "corrupt_entry_regenerated": 1,
+  "read_only_fallback": true,
+  "no_empty_icons": true
+}

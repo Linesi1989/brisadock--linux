@@ -1,0 +1,29 @@
+app-id: org.brisadock.BrisaDock
+runtime: org.kde.Platform
+runtime-version: '6.7'
+sdk: org.kde.Sdk
+command: brisadock
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=host:ro
+  - --filesystem=home
+  - --talk-name=org.kde.KWin
+  - --talk-name=org.freedesktop.Flatpak
+  - --talk-name=org.freedesktop.portal.Desktop
+modules:
+  - name: brisadock
+    buildsystem: simple
+    build-commands:
+      - install -d /app/lib/brisadock/src /app/bin
+      - install -m644 src/*.py /app/lib/brisadock/src/
+      - install -Dm644 empaquetado/org.brisadock.BrisaDock.desktop /app/share/applications/org.brisadock.BrisaDock.desktop
+      - install -Dm644 empaquetado/org.brisadock.BrisaDock.svg /app/share/icons/hicolor/scalable/apps/org.brisadock.BrisaDock.svg
+      - install -Dm644 empaquetado/org.brisadock.BrisaDock.metainfo.xml /app/share/metainfo/org.brisadock.BrisaDock.metainfo.xml
+      - printf '#!/usr/bin/env bash\nexec python3 /app/lib/brisadock/src/dock.py "$@"\n' > /app/bin/brisadock
+      - chmod 0755 /app/bin/brisadock
+    sources:
+      - type: dir
+        path: ..

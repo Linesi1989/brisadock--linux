@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="rightFace" x1="0" y1="5" x2="0" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#b8d7ff"/>
+    </linearGradient>
+    <linearGradient id="leftFace" x1="0" y1="5" x2="0" y2="95" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#15c7f8"/>
+      <stop offset="1" stop-color="#1b63dc"/>
+    </linearGradient>
+    <clipPath id="squircle">
+      <rect x="5" y="5" width="90" height="89" rx="21" ry="21"/>
+    </clipPath>
+  </defs>
+  <rect x="5" y="8" width="90" height="89" rx="21" ry="21" fill="rgba(0,0,0,0.16)"/>
+  <rect x="5" y="5" width="90" height="89" rx="21" ry="21" fill="url(#rightFace)"/>
+  <g clip-path="url(#squircle)">
+    <path d="M50 5 C45.17 21.14 40.61 37.07 39.56 50.39 C39.42 53.01 39.65 56.16 41.84 56.33 L50.43 56.67 C52.43 56.75 52.89 57.43 53.20 60.34 C54.19 71.84 55.09 83.38 57.92 94 L5 94 L5 5 Z" fill="url(#leftFace)"/>
+  </g>
+  <rect x="5" y="5" width="90" height="89" rx="21" ry="21" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="0.9"/>
+  <rect x="27.8" y="30.8" width="4.8" height="9.8" rx="2.4" ry="2.4" fill="rgba(12,24,42,0.78)"/>
+  <rect x="67.4" y="30.8" width="4.8" height="9.8" rx="2.4" ry="2.4" fill="rgba(12,24,42,0.78)"/>
+  <path d="M26.8 64.2 C36.2 76.2 63.8 76.2 73.6 63.8" fill="none" stroke="rgba(12,24,42,0.78)" stroke-width="3.3" stroke-linecap="round"/>
+</svg>

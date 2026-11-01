@@ -1,0 +1,26 @@
+{
+  "reservation_and_restore": true,
+  "one_dock_handoff_and_menu_lock": true,
+  "keyboard_navigation_and_clean_close": true,
+  "trash_state_read_only": {
+    "available": true,
+    "count": 2,
+    "full": true,
+    "source": "gio",
+    "no_deletions": true
+  },
+  "fullscreen_hide_own_fixture": true,
+  "fullscreen_edge_reveal_without_focus": {
+    "own_shelf_visible": true,
+    "above_fixture": true,
+    "active_window_preserved": true,
+    "input_forwarding_tested": true
+  },
+  "result": "PASS",
+  "verification_metadata": {
+    "timestamp_utc": "2026-11-01T17:05:55.781047+00:00",
+    "source_sha256": "f7e375520d3c24ff77a10aaa4c688ccecb1501d6616f0eff880691e6f398e576",
+    "script": "bloque_superficie.py",
+    "exit_code": 0
+  }
+}

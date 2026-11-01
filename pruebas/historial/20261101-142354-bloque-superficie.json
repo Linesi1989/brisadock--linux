@@ -1,0 +1,12 @@
+{
+  "reservation_and_restore": true,
+  "keyboard_navigation_and_clean_close": true,
+  "result": "FAIL",
+  "error": "AssertionError({'provider': {'available': True, 'count': 2, 'full': True, 'source': 'gio'}, 'integration': 'Detectando ventanas\u2026', 'menu_open': False, 'watcher_running': True})",
+  "verification_metadata": {
+    "timestamp_utc": "2026-11-01T14:21:29.926188+00:00",
+    "source_sha256": "4400ada9b913ae9563618ef5e74d93ca6b4adf69e849138a2b42e47eb35bf92a",
+    "script": "bloque_superficie.py",
+    "exit_code": 1
+  }
+}

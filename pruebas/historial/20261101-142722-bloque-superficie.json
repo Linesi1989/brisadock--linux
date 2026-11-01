@@ -1,0 +1,10 @@
+{
+  "result": "FAIL",
+  "error": "AssertionError(([0, 32, 1366, 736], [0, 32, 1366, 736]))",
+  "verification_metadata": {
+    "timestamp_utc": "2026-11-01T14:23:56.203098+00:00",
+    "source_sha256": "5378406251f9f4cc741d1dca9f6a6e41e1788b697e74bd976756ebf9416c8fa9",
+    "script": "bloque_superficie.py",
+    "exit_code": 1
+  }
+}

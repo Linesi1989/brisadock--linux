@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=BrisaDock Linux
+Comment=Dock estilo macOS para KDE/X11 (autoarranque de sesión)
+Exec=/home/leonardo/.local/bin/brisadock
+Icon=preferences-desktop
+Terminal=false
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel

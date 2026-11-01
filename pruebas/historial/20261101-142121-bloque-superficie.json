@@ -1,0 +1,12 @@
+{
+  "reservation_and_restore": true,
+  "keyboard_navigation_and_clean_close": true,
+  "result": "FAIL",
+  "error": "AssertionError()",
+  "verification_metadata": {
+    "timestamp_utc": "2026-11-01T14:19:58.659790+00:00",
+    "source_sha256": "a3309c00703c80f86f1b77ca42d02e914d0e1be3bd840cc3e65cedae436ca884",
+    "script": "bloque_superficie.py",
+    "exit_code": 1
+  }
+}

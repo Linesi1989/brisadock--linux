@@ -1,0 +1,159 @@
+NOTE: This is only a simulation!
+      apt-get needs root privileges for real execution.
+      Keep also in mind that locking is deactivated,
+      so don't depend on the relevance to the real current situation!
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bamfdaemon ca-certificates-java default-jre default-jre-headless
+  digikam-data digikam-private-libs firebird3.0-common firebird3.0-common-doc
+  firebird3.0-server-core firebird3.0-utils fonts-crosextra-caladea
+  fonts-crosextra-carlito fonts-dejavu fonts-dejavu-extra fonts-linuxlibertine
+  fonts-noto-extra fonts-sil-gentium fonts-sil-gentium-basic gdal-data
+  gdal-plugins gnome-settings-daemon java-common kate5-data kfind libaec0
+  libarmadillo12 libarpack2t64 libastro1 libatk-wrapper-java
+  libatk-wrapper-java-jni libbamf3-2t64 libblosc1 libbsh-java libcharls2
+  libcue2 libel-api-java libetpan20t64 libfbclient2 libfreexl1 libfyba0t64
+  libgdal34t64 libgdcm3.0t64 libgeos-c1t64 libgeos3.12.1t64 libgeotiff5
+  libgnome-autoar-0-0 libgnome-desktop-4-2t64 libhdf4-0-alt libhdf5-103-1t64
+  libhdf5-hl-100t64 libhsqldb1.8.0-java libhwloc-plugins libhwloc15 libib-util
+  libjsp-api-java libkf5calendarcore5abi2 libkf5sane-data libkf5sane5
+  libkmlbase1t64 libkmldom1t64 libkmlengine1t64 libksanecore1
+  liblensfun-data-v1 liblensfun1 liblockfile-bin liblockfile1
+  libmagick++-6.q16-9t64 libmarblewidget-qt5-28 libnetcdf19t64 libodbc2
+  libodbcinst2 libogdi4.1 libopencv-core406t64 libopencv-dnn406t64
+  libopencv-imgcodecs406t64 libopencv-imgproc406t64 libopencv-ml406t64
+  libplank-common libplank1 libportal-gtk4-1 libportal1 libpq5 libproj25
+  libqhull-r8.0 libqt5networkauth5 libqt5opengl5t64 libqt5serialport5
+  libqt5xmlpatterns5 librttopo1 libservlet-api-java libservlet3.1-java libshp4
+  libsocket++1 libspatialite8t64 libsuperlu6 libsz2 libtbb12 libtbbbind-2-5
+  libtbbmalloc2 libtracker-sparql-3.0-0 libunity-protocol-private0
+  libunity-scopes-json-def-desktop libunity9 libunoloader-java liburiparser1
+  libwebsocket-api-java libxerces-c3.2t64 libxnvctrl0 libzeitgeist-2.0-0
+  marble-plugins marble-qt-data opencv-data openjdk-21-jre
+  openjdk-21-jre-headless proj-bin proj-data tracker tracker-extract
+  tracker-miner-fs unixodbc-common ure-java
+Use 'apt autoremove' to remove them.
+The following packages will be REMOVED:
+  cairo-dock-alsamixer-plug-in cairo-dock-animated-icons-plug-in
+  cairo-dock-cairo-penguin-plug-in cairo-dock-clipper-plug-in
+  cairo-dock-clock-plug-in cairo-dock-core cairo-dock-dbus-plug-in
+  cairo-dock-desklet-rendering-plug-in cairo-dock-dialog-rendering-plug-in
+  cairo-dock-dnd2share-plug-in cairo-dock-drop-indicator-plug-in
+  cairo-dock-dustbin-plug-in cairo-dock-folders-plug-in
+  cairo-dock-gmenu-plug-in cairo-dock-icon-effect-plug-in
+  cairo-dock-illusion-plug-in cairo-dock-impulse-plug-in
+  cairo-dock-kde-integration-plug-in cairo-dock-keyboard-indicator-plug-in
+  cairo-dock-logout-plug-in cairo-dock-mail-plug-in
+  cairo-dock-messaging-menu-plug-in cairo-dock-motion-blur-plug-in
+  cairo-dock-musicplayer-plug-in cairo-dock-netspeed-plug-in
+  cairo-dock-plug-in-data cairo-dock-powermanager-plug-in
+  cairo-dock-quick-browser-plug-in cairo-dock-recent-events-plug-in
+  cairo-dock-remote-control-plug-in cairo-dock-rendering-plug-in
+  cairo-dock-rssreader-plug-in cairo-dock-showdesktop-plug-in
+  cairo-dock-showmouse-plug-in cairo-dock-slider-plug-in
+  cairo-dock-stack-plug-in cairo-dock-switcher-plug-in
+  cairo-dock-system-monitor-plug-in cairo-dock-systray-plug-in
+  cairo-dock-terminal-plug-in cairo-dock-toons-plug-in
+  cairo-dock-weather-plug-in cairo-dock-wifi-plug-in cairo-dock-xgamma-plug-in
+  liblibreoffice-java libreoffice libreoffice-base libreoffice-base-core
+  libreoffice-base-drivers libreoffice-calc libreoffice-common
+  libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3
+  libreoffice-help-common libreoffice-help-en-us libreoffice-help-es
+  libreoffice-impress libreoffice-java-common libreoffice-l10n-es
+  libreoffice-math libreoffice-nlpsolver libreoffice-report-builder
+  libreoffice-report-builder-bin libreoffice-script-provider-bsh
+  libreoffice-script-provider-js libreoffice-script-provider-python
+  libreoffice-sdbc-firebird libreoffice-sdbc-hsqldb libreoffice-sdbc-mysql
+  libreoffice-sdbc-postgresql libreoffice-style-colibre
+  libreoffice-uiconfig-base libreoffice-uiconfig-calc
+  libreoffice-uiconfig-common libreoffice-uiconfig-draw
+  libreoffice-uiconfig-impress libreoffice-uiconfig-math
+  libreoffice-uiconfig-report-builder libreoffice-uiconfig-writer
+  libreoffice-wiki-publisher libreoffice-writer python3-uno
+0 upgraded, 0 newly installed, 84 to remove and 169 not upgraded.
+Remv cairo-dock-alsamixer-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-animated-icons-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-cairo-penguin-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-clipper-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-clock-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-core [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-dbus-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-desklet-rendering-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-dialog-rendering-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-dnd2share-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-drop-indicator-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-dustbin-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-folders-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-gmenu-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-icon-effect-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-illusion-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-impulse-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-kde-integration-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-keyboard-indicator-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-logout-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-mail-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-messaging-menu-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-motion-blur-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-musicplayer-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-netspeed-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-xgamma-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-wifi-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv cairo-dock-plug-in-data [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-rssreader-plug-in:amd64 cairo-dock-recent-events-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-quick-browser-plug-in:amd64 cairo-dock-rendering-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-remote-control-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-powermanager-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-powermanager-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-rssreader-plug-in:amd64 cairo-dock-recent-events-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-quick-browser-plug-in:amd64 cairo-dock-rendering-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-remote-control-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-quick-browser-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-rssreader-plug-in:amd64 cairo-dock-recent-events-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-rendering-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-remote-control-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-recent-events-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-rssreader-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-rendering-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-remote-control-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-remote-control-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-rssreader-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-rendering-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-rendering-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-rssreader-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-rssreader-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-showdesktop-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-showdesktop-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 cairo-dock-showmouse-plug-in:amd64 ]
+Remv cairo-dock-showmouse-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-slider-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 ]
+Remv cairo-dock-slider-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-stack-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 ]
+Remv cairo-dock-stack-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 cairo-dock-switcher-plug-in:amd64 ]
+Remv cairo-dock-switcher-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-system-monitor-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 ]
+Remv cairo-dock-system-monitor-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 cairo-dock-systray-plug-in:amd64 ]
+Remv cairo-dock-systray-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-toons-plug-in:amd64 cairo-dock-terminal-plug-in:amd64 ]
+Remv cairo-dock-terminal-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 cairo-dock-toons-plug-in:amd64 ]
+Remv cairo-dock-toons-plug-in [3.6.2-ppa1~ubuntu24.04] [cairo-dock-weather-plug-in:amd64 ]
+Remv cairo-dock-weather-plug-in [3.6.2-ppa1~ubuntu24.04]
+Remv libreoffice-wiki-publisher [4:1.2.0+LibO24.2.7-0ubuntu0.24.04.7]
+Remv libreoffice-script-provider-js [4:24.2.7-0ubuntu0.24.04.7]
+Remv liblibreoffice-java [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 libreoffice-nlpsolver:amd64 libreoffice-report-builder:amd64 ]
+Remv libreoffice [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 libreoffice-nlpsolver:amd64 libreoffice-report-builder:amd64 ]
+Remv libreoffice-report-builder [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 libreoffice-nlpsolver:amd64 ]
+Remv libreoffice-report-builder-bin [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 libreoffice-nlpsolver:amd64 ]
+Remv libreoffice-base [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 libreoffice-nlpsolver:amd64 ]
+Remv libreoffice-nlpsolver [4:0.9+LibO24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-calc [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-writer [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-base-core [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-base-drivers [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-sdbc-postgresql [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-help-en-us [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-sdbc-mysql [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-common [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-gnome:amd64 libreoffice-core:amd64 libreoffice-draw:amd64 libreoffice-impress:amd64 libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-sdbc-hsqldb [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-gnome:amd64 libreoffice-core:amd64 libreoffice-draw:amd64 libreoffice-impress:amd64 libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-core [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-gnome:amd64 libreoffice-draw:amd64 libreoffice-impress:amd64 libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-sdbc-firebird:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-gtk3:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-impress [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-gnome:amd64 libreoffice-draw:amd64 libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-sdbc-firebird:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-gtk3:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-draw [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-gnome:amd64 libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-sdbc-firebird:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-gtk3:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-gnome [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-sdbc-firebird:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-gtk3:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-gtk3 [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-help-es:amd64 libreoffice-sdbc-firebird:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-help-es [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-sdbc-firebird:amd64 libreoffice-help-common:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-help-common [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-sdbc-firebird:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-script-provider-bsh:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-script-provider-bsh [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-sdbc-firebird:amd64 python3-uno:amd64 libreoffice-math:amd64 libreoffice-java-common:amd64 ]
+Remv libreoffice-java-common [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-l10n-es:amd64 libreoffice-script-provider-python:amd64 libreoffice-sdbc-firebird:amd64 python3-uno:amd64 libreoffice-math:amd64 ]
+Remv libreoffice-l10n-es [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-python:amd64 libreoffice-sdbc-firebird:amd64 python3-uno:amd64 libreoffice-math:amd64 ]
+Remv libreoffice-math [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-script-provider-python:amd64 libreoffice-sdbc-firebird:amd64 python3-uno:amd64 ]
+Remv libreoffice-script-provider-python [4:24.2.7-0ubuntu0.24.04.7] [libreoffice-sdbc-firebird:amd64 python3-uno:amd64 ]
+Remv libreoffice-sdbc-firebird [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-style-colibre [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-base [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-calc [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-common [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-draw [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-impress [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-math [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-report-builder [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv libreoffice-uiconfig-writer [4:24.2.7-0ubuntu0.24.04.7] [python3-uno:amd64 ]
+Remv python3-uno [4:24.2.7-0ubuntu0.24.04.7]

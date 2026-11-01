@@ -1,0 +1,14 @@
+{
+  "phase": "idle",
+  "backend": "X11Backend",
+  "trash_count": 2,
+  "startup_seconds": 0.812,
+  "thread_stopped": true,
+  "result": "PASS",
+  "verification_metadata": {
+    "timestamp_utc": "2026-11-01T17:05:37.785049+00:00",
+    "source_sha256": "f7e375520d3c24ff77a10aaa4c688ccecb1501d6616f0eff880691e6f398e576",
+    "script": "diagnostico_inicio.py",
+    "exit_code": 0
+  }
+}

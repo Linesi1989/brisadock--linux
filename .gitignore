@@ -1,0 +1,24 @@
+# Entornos virtuales y caché de Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+pip.pyz
+wheels/
+tmp/
+
+# Perfiles locales de usuario y pruebas
+perfiles/
+!perfiles/.gitkeep
+
+# Artefactos de compilación y paquetes generados
+build/
+dist/
+*.deb
+*.AppImage
+*.snap
+
+# Archivos históricos de desarrollo local
+base-linux-0.11/
+referencia-0.37/
+integracion/

@@ -1,0 +1,14 @@
+{
+  "phase": "backend-start",
+  "backend": "NoneType",
+  "trash_count": null,
+  "startup_seconds": 10.366,
+  "thread_stopped": true,
+  "result": "FAIL",
+  "verification_metadata": {
+    "timestamp_utc": "2026-11-01T17:05:24.052082+00:00",
+    "source_sha256": "f7e375520d3c24ff77a10aaa4c688ccecb1501d6616f0eff880691e6f398e576",
+    "script": "diagnostico_inicio.py",
+    "exit_code": 1
+  }
+}

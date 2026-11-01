@@ -1,0 +1,63 @@
+{
+  "result": "PASS",
+  "duration_seconds": 179.8,
+  "samples": [
+    {
+      "seconds": 9.8,
+      "rss_kib": 74396,
+      "threads": 10,
+      "windows": 7,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 29.8,
+      "rss_kib": 74480,
+      "threads": 10,
+      "windows": 7,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 59.8,
+      "rss_kib": 87320,
+      "threads": 10,
+      "windows": 8,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 89.8,
+      "rss_kib": 87392,
+      "threads": 10,
+      "windows": 8,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 119.8,
+      "rss_kib": 87392,
+      "threads": 10,
+      "windows": 8,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 149.8,
+      "rss_kib": 87392,
+      "threads": 10,
+      "windows": 8,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 179.8,
+      "rss_kib": 87440,
+      "threads": 10,
+      "windows": 8,
+      "hidden": 1.0
+    },
+    {
+      "seconds": 179.8,
+      "rss_kib": 87592,
+      "threads": 9,
+      "windows": 8,
+      "hidden": 1.0
+    }
+  ],
+  "note": "Ensayo de 3 minutos en sesi\u00f3n real; no sustituye una jornada de uso ni suspensi\u00f3n/cable f\u00edsicos."
+}

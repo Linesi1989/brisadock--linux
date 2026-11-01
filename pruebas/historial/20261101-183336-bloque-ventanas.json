@@ -1,0 +1,12 @@
+{
+  "two_windows_one_pinned_icon": true,
+  "composite_previews": true,
+  "preview_changed_while_occluded": [
+    "#e84040",
+    "#20c060"
+  ],
+  "minimized_group_or_separate": true,
+  "individual_minimize_restore": true,
+  "closing_one_preserves_other": true,
+  "result": "PASS"
+}

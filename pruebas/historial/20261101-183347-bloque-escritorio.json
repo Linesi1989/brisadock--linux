@@ -1,0 +1,33 @@
+{
+  "auto_hide_reveal_real_pointer": [
+    [
+      "HDMI-1",
+      "bottom"
+    ],
+    [
+      "HDMI-1",
+      "left"
+    ],
+    [
+      "HDMI-1",
+      "right"
+    ],
+    [
+      "eDP-1",
+      "bottom"
+    ],
+    [
+      "eDP-1",
+      "left"
+    ],
+    [
+      "eDP-1",
+      "right"
+    ]
+  ],
+  "maximized_fixture_present": true,
+  "folder_stack_icon_live": true,
+  "folder_natural_order_watcher_preferences": true,
+  "folder_panel_open_close_cycles": 240,
+  "result": "PASS"
+}

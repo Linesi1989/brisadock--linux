@@ -1,0 +1,62 @@
+{
+  "timestamp_utc": "2026-11-01T18:34:23.387804+00:00",
+  "source_sha256": "f74b976e3482db8678e9fd43db61353952b74c40bf3f156a0d09091db5023e1e",
+  "python_modules_syntax_ok": 35,
+  "verified_pass_reports": [
+    "diagnostico-inicio.json",
+    "validacion-nativa.json",
+    "bloque-iconos.json",
+    "bloque-arrastre.json",
+    "bloque-ventanas.json",
+    "bloque-escritorio.json",
+    "bloque-superficie.json",
+    "dolphin-arrastre.json",
+    "estabilidad-sesion.json"
+  ],
+  "latest_startup_result": {
+    "phase": "idle",
+    "backend": "X11Backend",
+    "trash_count": 2,
+    "startup_seconds": 0.593,
+    "thread_stopped": true,
+    "result": "PASS",
+    "source_sha256": "f74b976e3482db8678e9fd43db61353952b74c40bf3f156a0d09091db5023e1e"
+  },
+  "latest_surface_result": {
+    "reservation_and_restore": true,
+    "one_dock_handoff_and_menu_lock": true,
+    "keyboard_navigation_and_clean_close": true,
+    "trash_state_read_only": {
+      "available": true,
+      "count": 2,
+      "full": true,
+      "source": "gio",
+      "no_deletions": true
+    },
+    "fullscreen_hide_own_fixture": true,
+    "fullscreen_edge_reveal_without_focus": {
+      "own_shelf_visible": true,
+      "above_fixture": true,
+      "active_window_preserved": true,
+      "input_forwarding_tested": true
+    },
+    "result": "PASS",
+    "verification_metadata": {
+      "timestamp_utc": "2026-11-01T18:34:23.387804+00:00",
+      "source_sha256": "f74b976e3482db8678e9fd43db61353952b74c40bf3f156a0d09091db5023e1e",
+      "script": "bloque_superficie.py",
+      "exit_code": 0
+    }
+  },
+  "craft_documents": {
+    "wordcraft": "PASS",
+    "gridcraft": "PASS",
+    "deckcraft": "PASS",
+    "pdfcraft": "PASS"
+  },
+  "association_cases": 8,
+  "association_expected_windows": 8,
+  "cairo_replacement_ready": true,
+  "autostart_ready": true,
+  "reason": "Todos los bloques de validaci\u00f3n (inicio, instancia, iconos, arrastre, ventanas, escritorio con 240 ciclos y superficie fullscreen) han pasado con PASS sobre la huella SHA-256 actual (f74b976e3482db8678e9fd43db61353952b74c40bf3f156a0d09091db5023e1e) con paridad est\u00e9tica y funcional macOS/0.37."
+}
