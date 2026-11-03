@@ -44,7 +44,7 @@ brisadock
 ### Opción 2: Ejecución desde el código fuente
 
 ```bash
-git clone https://github.com/TU_USUARIO/brisadock-linux.git
+git clone https://github.com/Linesi1989/brisadock-linux.git
 cd brisadock-linux
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
