@@ -3,13 +3,26 @@ import math
 from Xlib import display, X, Xatom
 
 
+def _visible_blur_region(values):
+    # KDE's region property uses unsigned CARDINALs. During edge hide/reveal
+    # the shelf may extend beyond the client; retain only its visible part.
+    clipped = []
+    for i in range(0, len(values), 4):
+        x, y, width, height = values[i:i+4]
+        left, top = max(0, x), max(0, y)
+        right, bottom = x + width, y + height
+        if right > left and bottom > top:
+            clipped.extend([left, top, right-left, bottom-top])
+    return clipped
+
+
 def rounded_blur_region(rectangle, radius=21):
     x, y, width, height = [int(v) for v in rectangle]
     if width <= 0 or height <= 0:
         return []
     r = max(0, min(int(radius), width // 2, height // 2))
     if r <= 2:
-        return [x, y, width, height]
+        return _visible_blur_region([x, y, width, height])
     values = []
     for row in range(r):
         dy = r - row - 0.5
@@ -24,7 +37,7 @@ def rounded_blur_region(rectangle, radius=21):
         dx = max(0, round(r - math.sqrt(max(0.0, r * r - dy * dy))))
         w = max(1, width - 2 * dx)
         values.extend([x + dx, y + height - r + row, w, 1])
-    return values
+    return _visible_blur_region(values)
 
 
 class X11Surface:

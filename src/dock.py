@@ -202,6 +202,7 @@ class Dock(QWidget):
         self.fullscreen_active = False
         self.fullscreen_shelf = None
         self.fullscreen_edge_active = False
+        self._fullscreen_pointer_suppressed = False
         self.show_recent = bool(self.config.get('show_recent', True))
         self.recent = RecentApplications(self.config.get('recent_apps', []))
         self.show_attention = bool(self.config.get('show_attention', True))
@@ -519,7 +520,8 @@ class Dock(QWidget):
             return
         chosen = select_screen(self.screen_mode, self.screen_id, self.dock_screen, screens, QApplication.primaryScreen())
         blocked = (self.dragged or self.press_pos is not None or self.menu_open or self.external_drag or self.resizing_separator
-                   or bool(self.effects or self.sheet_pending) or self.keyboard_controller is not None)
+                   or bool(self.effects or self.sheet_pending) or self.keyboard_controller is not None
+                   or self.fullscreen_blocks_pointer())
         if self.screen_mode == 'follow_edge':
             target = self.handoff.poll(QCursor.pos(), self.edge, screens, chosen, time.monotonic(), blocked)
             chosen = target or chosen
@@ -643,8 +645,30 @@ class Dock(QWidget):
         except OSError as error:
             QMessageBox.warning(self, APP, f'No se pudo guardar la configuración:\n{error}')
 
+    def fullscreen_blocks_pointer(self):
+        return os.name != 'nt' and self.hide_fullscreen and self.fullscreen_active
+
     def tick(self):
         self.update_screen()
+        if self.fullscreen_blocks_pointer():
+            # A fullscreen application owns its monitor's edges. Neither the
+            # input region nor the override-redirect shelf may intercept it.
+            self._fullscreen_pointer_suppressed = True
+            self.fullscreen_edge_active = False
+            self.hidden_amount = 1.0
+            self.hover = -1
+            self.zoom = [1.0 for _ in self.zoom]
+            if self.fullscreen_shelf:
+                self.fullscreen_shelf.hide()
+            if self.surface:
+                self.surface.input_rectangle()
+            self.hide()
+            self.timer.setInterval(80)
+            return
+        if self._fullscreen_pointer_suppressed:
+            self._fullscreen_pointer_suppressed = False
+            self.position_dock()
+            self.show()  # WA_ShowWithoutActivating preserves application focus.
         if self.surface:
             if self.hidden_amount > .8:
                 self.surface.input_rectangle()
@@ -1163,6 +1187,8 @@ class Dock(QWidget):
         self.update()
 
     def keyboard_focus(self):
+        if self.fullscreen_blocks_pointer():
+            return
         from panels import KeyboardPanel
         current = getattr(self, 'keyboard_panel', None)
         if current is not None and current.isVisible():
@@ -1183,6 +1209,8 @@ class Dock(QWidget):
         panel.activateWindow()
 
     def reveal_instance(self):
+        if self.fullscreen_blocks_pointer():
+            return
         self.show()
         self.hidden_amount = 0
         self.last_inside = time.monotonic()+1.5

@@ -20,6 +20,9 @@ class FullscreenShelf(QWidget):
         self.setMouseTracking(True);self.setAcceptDrops(True)
         self.image=None
     def refresh(self):
+        if self.dock.fullscreen_blocks_pointer():
+            self.hide()
+            return
         self.setGeometry(self.dock.geometry())
         self.image=self.dock.grab()
         self.setMask(QRegion(self.image.mask()))

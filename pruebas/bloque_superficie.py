@@ -66,29 +66,13 @@ try:
  assert wait(lambda:dock.hidden_amount>.98),'No se oculta en pantalla completa'
  report['fullscreen_hide_own_fixture']=True
  area=app.primaryScreen().geometry();QCursor.setPos(QPoint(area.left(),area.center().y()))
- assert wait(lambda:dock.hidden_amount<.02),'No reaparece desde el borde'
- stacking=prop(root,'_NET_CLIENT_LIST_STACKING')
- mirror=dock.fullscreen_shelf
- assert mirror is not None and mirror.isVisible(),'No hay superficie propia visible'
- frame=d.create_resource_object('window',handle)
- for _ in range(8):
-  parent=frame.query_tree().parent
-  if parent.id==root.id:break
-  frame=parent
- children=[w.id for w in root.query_tree().children]
- above=children.index(int(mirror.winId()))>children.index(frame.id)
- preserved=(prop(root,'_NET_ACTIVE_WINDOW')==[handle])
- assert above and preserved,dict(above=above,preserved=preserved)
- report['fullscreen_edge_reveal_without_focus']=dict(own_shelf_visible=True,above_fixture=above,active_window_preserved=preserved)
- assert not mirror.mask().isEmpty()
- hover=dock.mapToGlobal(dock.rects[0].center().toPoint());QCursor.setPos(hover);pause(150)
- assert root.query_pointer().child.id==int(mirror.winId()),'El estante no recibe el puntero'
- assert prop(root,'_NET_ACTIVE_WINDOW')==[handle],'Se perdió el foco de la ventana fullscreen'
- QTest.mouseClick(mirror,Qt.LeftButton,Qt.NoModifier,dock.rects[0].center().toPoint());pause(100)
- assert selected[-1]==0,'No se activó el elemento del estante propio'
- report['fullscreen_edge_reveal_without_focus']['input_forwarding_tested']=True
- mirror.grab().save(str(ROOT/'pruebas/pantalla-completa-estante.png'))
- message(handle,'_NET_WM_STATE',[0,atom('_NET_WM_STATE_FULLSCREEN'),0,2,0]);pause(200)
+ pause(800)
+ assert dock.hidden_amount==1 and not dock.isVisible(),'El borde reactiva el Dock sobre fullscreen'
+ assert dock.fullscreen_shelf is None or not dock.fullscreen_shelf.isVisible()
+ assert prop(root,'_NET_ACTIVE_WINDOW')==[handle],'Se perdió el foco fullscreen'
+ report['fullscreen_edge_suppressed_without_focus_change']=True
+ message(handle,'_NET_WM_STATE',[0,atom('_NET_WM_STATE_FULLSCREEN'),0,2,0])
+ assert wait(lambda:not dock.fullscreen_active and dock.isVisible()),'No vuelve el Dock al salir de fullscreen'
  report['result']='PASS'
 except Exception as error:report.update(result='FAIL',error=repr(error))
 finally:
